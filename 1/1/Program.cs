@@ -18,7 +18,7 @@ namespace _1
             int guerreiroAGI = 8;
 
 
-            int alvo = 20;
+            Random alvo = new Random();
 
 
 
@@ -32,17 +32,17 @@ namespace _1
             {
                 dano = arqueiroFOR + arqueiroAGI;
 
-                int result = dano - alvo;
+                int result = dano - alvo.Next(25);
 
 
                 if (result >= 0)
                 {
-                    Console.WriteLine("ALVO DESTRUIDO");
+                    Console.WriteLine("ALVO DESTRUIDO", result);
 
                 }
                 else
                 {
-                    Console.WriteLine("ALVO NÂO FOI DESTRUIDO");
+                    Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                 }
 
             }
@@ -53,17 +53,17 @@ namespace _1
 
                     dano = barbaroFOR + barbaroAGI;
 
-                    int result = dano - alvo;
+                    int result = dano - alvo.Next(25);
 
 
                     if (result >= 0)
                     {
-                        Console.WriteLine("ALVO DESTRUIDO");
+                        Console.WriteLine("ALVO DESTRUIDO", result);
 
                     }
                     else
                     {
-                        Console.WriteLine("ALVO NÂO FOI DESTRUIDO");
+                        Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                     }
 
                 }
@@ -74,17 +74,17 @@ namespace _1
 
                         dano = guerreiroFOR + guerreiroAGI;
 
-                        int result = dano - alvo;
+                        int result = dano - alvo.Next(25);
 
 
                         if (result >= 0)
                         {
-                            Console.WriteLine("ALVO DESTRUIDO");
+                            Console.WriteLine("ALVO DESTRUIDO", result);
 
                         }
                         else
                         {
-                            Console.WriteLine("ALVO NÂO FOI DESTRUIDO");
+                            Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                         }
 
                     }
