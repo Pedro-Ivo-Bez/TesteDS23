@@ -21,7 +21,7 @@ namespace _1
             Random alvo = new Random();
 
 
-
+            Console.WriteLine("-------------------------------------||-------------------------------------");
             Console.WriteLine("Escolha um Personagem (escrevendo seu nome): ");
             Console.WriteLine("ARQUEIRO    --    BARBARO    --    GUERREIRO");
 
@@ -37,11 +37,14 @@ namespace _1
 
                 if (result >= 0)
                 {
+                    Console.WriteLine("-------------------------------------||-------------------------------------");
+                    Console.WriteLine("POW");
                     Console.WriteLine("ALVO DESTRUIDO", result);
 
                 }
                 else
                 {
+                    Console.WriteLine("-------------------------------------||-------------------------------------");
                     Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                 }
 
@@ -58,11 +61,14 @@ namespace _1
 
                     if (result >= 0)
                     {
+                        Console.WriteLine("-------------------------------------||-------------------------------------");
+                        Console.WriteLine("POW");
                         Console.WriteLine("ALVO DESTRUIDO", result);
 
                     }
                     else
                     {
+                        Console.WriteLine("-------------------------------------||-------------------------------------");
                         Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                     }
 
@@ -79,17 +85,24 @@ namespace _1
 
                         if (result >= 0)
                         {
+
+                            Console.WriteLine("-------------------------------------||-------------------------------------");
+                            Console.WriteLine("POW");
                             Console.WriteLine("ALVO DESTRUIDO", result);
 
                         }
                         else
                         {
+                            Console.WriteLine("-------------------------------------||-------------------------------------");
                             Console.WriteLine("ALVO NÂO FOI DESTRUIDO", result);
                         }
 
                     }
                 }
             }
+
+
+            Console.WriteLine("-------------------------------------||-------------------------------------");
         }
     }
 }
